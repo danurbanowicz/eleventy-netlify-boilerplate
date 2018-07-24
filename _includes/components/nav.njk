@@ -1,0 +1,5 @@
+<ul class="nav">
+  {%- for nav in collections.nav | sort(attribute="date") -%}
+  <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
+  {%- endfor -%}
+</ul>

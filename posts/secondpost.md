@@ -1,5 +1,6 @@
 ---
 title: This is my second post.
+date: 2016-01-01
 tags:
   - post
   - number-2

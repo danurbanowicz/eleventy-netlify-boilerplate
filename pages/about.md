@@ -1,10 +1,12 @@
 ---
-layout: layouts/post.njk
+layout: layouts/page.njk
 title: About Me
 tags:
   - nav
 navtitle: About
-templateClass: tmpl-post
+section: about
+date: 2017-01-01
+permalink: /about/index.html
 ---
 
 I am a person that writes stuff.

@@ -1,5 +1,6 @@
 ---
 title: This is my first post.
+date: 2015-01-01
 tags:
   - post
   - another-tag
