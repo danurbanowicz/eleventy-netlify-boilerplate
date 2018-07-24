@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
-  "version": "4.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "name": "eleventy-netlify-boilerplate",
+  "version": "1.0",
+  "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
@@ -9,24 +9,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/danurbanowicz/eleventy-netlify-boilerplate.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Dan Urbanowicz",
+    "email": "dan.urbanowicz@gmail.com",
+    "url": "https://www.danurbanowicz.com/"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
   "devDependencies": {
     "@11ty/eleventy": "^0.4.0",
-    "@11ty/eleventy-plugin-rss": "^1.0.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^1.0.5",
     "luxon": "^1.0.0",
     "markdown-it": "^8.4.1",
     "markdown-it-anchor": "^4.0.0"
+  },
+  "dependencies": {
+    "clean-css": "^4.1.11",
+    "uglify-js": "^3.4.5"
   }
 }
