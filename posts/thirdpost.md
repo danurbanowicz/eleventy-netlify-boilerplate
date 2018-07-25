@@ -4,14 +4,14 @@ date: 2017-01-01
 tags:
   - post
   - second-tag
+  - pain
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-``` js/2/3
-// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
+```
+pre,
+code {
+	line-height: 1.5;
 }
 ```
 
