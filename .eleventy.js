@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-js");
+const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
 
@@ -26,6 +27,19 @@ module.exports = function(eleventyConfig) {
     return minified.code;
   });
 
+  // Minify HTML output
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if( outputPath.indexOf(".html") > -1 ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
+  });
+
   // only content in the `posts/` directory
   eleventyConfig.addCollection("posts", function(collection) {
     return collection.getAllSorted().filter(function(item) {
@@ -38,7 +52,6 @@ module.exports = function(eleventyConfig) {
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
-  let markdownItAnchor = require("markdown-it-anchor");
   let options = {
     html: true,
     breaks: true,
@@ -49,10 +62,6 @@ module.exports = function(eleventyConfig) {
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
   };
-
-  eleventyConfig.setLibrary("md", markdownIt(options)
-    .use(markdownItAnchor, opts)
-  );
 
   return {
     templateFormats: [

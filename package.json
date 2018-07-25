@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "clean-css": "^4.1.11",
+    "html-minifier": "^3.5.19",
     "uglify-js": "^3.4.5"
   }
 }
