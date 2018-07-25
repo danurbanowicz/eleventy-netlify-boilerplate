@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/danurbanowicz/eleventy-netlify-boilerplate.git"
+    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate"
   },
   "author": {
     "name": "Dan Urbanowicz",
