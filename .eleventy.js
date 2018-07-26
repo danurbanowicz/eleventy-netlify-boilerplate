@@ -53,7 +53,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Don't process folders with static assets
-  eleventyConfig.addPassthroughCopy("img");
+  //eleventyConfig.addPassthroughCopy("img");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
