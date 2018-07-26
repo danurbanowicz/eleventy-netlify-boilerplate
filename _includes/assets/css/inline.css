@@ -2,6 +2,7 @@
 	--lightsalmon: #FFF0EB;
 	--white: #fff;
 	--blue: blue;
+	--pink: deeppink;
 }
 * {
 	box-sizing: border-box;
@@ -49,6 +50,7 @@ pre,
 code {
 	font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
 	line-height: 1.5;
+	color: var(--pink);
 }
 pre {
 	font-size: 14px;
@@ -67,8 +69,6 @@ pre {
 	hyphens: none;
 	padding: 1em;
 	margin: .5em 0;
-	background-color: #eee;
-	background-color: var(--white);
 }
 
 ul,
@@ -77,18 +77,18 @@ ol {
 	list-style: none;
 }
 
-/* Nav */
-nav ul :first-child {
+/* Main Nav */
+header nav ul :first-child {
 	margin-left: 0;
 }
-nav li {
+header nav li {
 	display: inline-block;
 	margin: 0 0.5em;
 }
-nav li a[href]:not(:hover) {
+header nav li a[href]:not(:hover) {
 	text-decoration: none;
 }
-nav li a[data-current="current item"] {
+header nav li a[data-current="current item"] {
 	font-weight: 700;
 	text-decoration: underline;
 }
@@ -107,11 +107,16 @@ section ol li::before {
   content: "" counter(start-from, decimal-leading-zero) ". ";
 }
 
+/* Index link (back to) */
+main nav {
+	margin: 4em 0;
+}
+
 /* Tags */
 a[rel="tag"],
 a[rel="tag"]:visited {
 	display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-top;
   text-transform: uppercase;
 	letter-spacing: 0.1em;
   font-size: 0.625em;
