@@ -9,4 +9,6 @@ permalink: /
 
 # Welcome
 
-We phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+This is a boilerplate for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io) and deploying it to [Netlify](https://www.netlify.com).
+
+For installation and usage, view the repo on [Github]({{ pkg.repository.url }}).
