@@ -1,18 +1,8 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title or metadata.title }}</title>
-		{% set css %}
-			{% include "assets/css/inline.css" %}
-		{% endset %}
-		<style>{{ css | cssmin | safe }}</style>
-		{% set js %}
-			{% include "assets/js/inline.js" %}
-		{% endset %}
-		<script>{{ js | jsmin | safe }}</script>
-	</head>
+
+	{% include "components/head.njk" %}
+
 	<body>
 
 		<header>
@@ -24,12 +14,7 @@
 			{{ layoutContent | safe }}
 		</main>
 
-		<footer>
-			<small>
-				This project is maintained by <a href="https://www.danurbanowicz.com">Dan Urbanowicz</a>.
-				View the repo on <a href="{{ pkg.repository.url }}">Github</a>
-			</small>
-		</footer>
+		{% include "components/footer.njk" %}
 
 	</body>
 
