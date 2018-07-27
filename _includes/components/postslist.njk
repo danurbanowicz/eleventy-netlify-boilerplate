@@ -1,22 +1,35 @@
 <section>
-	<ol style="counter-reset: start-from {{ postslist.length + 1 }}">
 	{% for post in postslist | reverse %}
-		<li{% if post.url == url %} data-current="current item"{% endif %}>
-			<a href="{{ post.url | url }}">
-			{% if post.data.title %}
-				{{ post.data.title }}
-			{% else %}
-				<code>{{ post.url }}</code>
+		<article{% if post.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ post.url | url }}">
+					{% if post.data.title %}
+						{{ post.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3>
+			{% if post.data.summary %}
+				<p>
+					{{ post.data.summary }}
+				</p>
 			{% endif %}
-			</a>
-			<time datetime="{{ post.date | machineDate }}">{{ post.date | readableDate }}</time>
-			{% for tag in post.data.tags %}
-		  	{%- if tag != "post" -%}
-		  		{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-		  		<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-		  	{%- endif -%}
-			{% endfor %}
-		</li>
+			<p>
+				<time datetime="{{ post.date | machineDate }}">
+					<small>{{ post.date | readableDate }} by {{ metadata.author.name }}</small>
+				</time>
+			</p>
+			{% if post.data.tags %}
+				<p>
+					{% for tag in post.data.tags %}
+		  			{%- if tag != "post" -%}
+		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+		  			{%- endif -%}
+					{% endfor %}
+				</p>
+			{% endif %}
+		</article>
 	{% endfor %}
-	</ol>
 </section>
