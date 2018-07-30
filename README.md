@@ -4,16 +4,19 @@
 
 An extremely simple and lightweight template for building a website with blog using the [Eleventy](https://www.11ty.io/) static site generator, with deployment to [Netlify](https://www.netlify.com).
 
-Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for more info on usage).
+Use it as a basis for your own projects or as a way to get started building static sites with Eleventy.
+
+Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on usage).
 
 ## Features
 
-* 100% pre-built and minified HTML
+* Pre-builds and minifies your HTML
 * CSS 2kb minified, inline for fastest page render
-* CSS Grid layout with fallbacks
-* Sample pages and a blog with posts and tag support
-* Uses Markdown files for content
+* Responsive CSS Grid layout, with fallbacks
+* Sample pages and blog with tag support
+* Uses Markdown files for content (works with Netlify CMS)
 * Uses Liquid and/or Nunjucks templates for layout
+* Contains no boilerplate JS (100% framework free)
 * Optional Javascipt pipeline for minified inline scripts
 * Continuous Integration (CI) workflow
 
