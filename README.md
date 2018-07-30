@@ -10,13 +10,13 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
+* Sample pages and blog with tag support
 * Pre-builds and minifies your HTML
 * CSS 2kb minified, inline for fastest page render
 * Responsive CSS Grid layout, with fallbacks
-* Sample pages and blog with tag support
 * Uses Markdown files for content (works with Netlify CMS)
 * Uses Liquid and/or Nunjucks templates for layout
-* Contains no boilerplate JS (100% framework free)
+* Contains no boilerplate JS or other bloat (100% framework free)
 * Optional Javascipt pipeline for minified inline scripts
 * Continuous Integration (CI) workflow
 
@@ -51,7 +51,7 @@ npm install
 
 ### 4. Edit _data/metadata.json
 
-### 5. Run Eleventy
+### 5. Run Eleventy (builds the site)
 
 ```
 npx eleventy
@@ -66,3 +66,9 @@ Or in debug mode:
 ```
 DEBUG=* npx eleventy
 ```
+
+## Bug reports, feature requests, etc
+
+This is an ongoing project and I welcome any feedback, suggestions or contributions.
+
+Please use the issue tracker to let me know about any bugs or feature requests, or alternatively make a pull request.
