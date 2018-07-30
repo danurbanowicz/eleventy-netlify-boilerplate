@@ -8,20 +8,20 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
-* 100% pre-built and minified HTML pages
+* 100% pre-built and minified HTML
 * CSS 2kb minified, inline for fastest page render
 * CSS Grid layout with fallbacks
 * Sample pages and a blog with posts and tag support
 * Uses Markdown files for content
 * Uses Liquid and/or Nunjucks templates for layout
 * Optional Javascipt pipeline for minified inline scripts
-* Continuous Integration (CI) workflow via Netlify
+* Continuous Integration (CI) workflow
 
 ## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com//)
 
 ## Want to just try it out?
 
-* [Get your own copy on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate) in just a few clicks.
+* [Deploy this project now to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate) in just a few clicks.
 
 ## Getting Started
 
