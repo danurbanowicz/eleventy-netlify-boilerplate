@@ -2,13 +2,15 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-publish_mode: editorial_workflow
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
 
 media_folder: 'static/img' # Media files will be stored in the repo under images/uploads
 
 collections:
+  # Our blog posts
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
-    label: 'Blog' # Used in the UI
+    label: 'Post' # Used in the UI
     folder: 'posts' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
@@ -17,4 +19,17 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Summary', name: 'summary', widget: 'text' }
       - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  # Our pages e.g. About
+  - name: 'pages'
+    label: 'Page'
+    folder: 'pages'
+    create: 'false' # Change to true to allow editors to create new pages
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Permalink', name: 'permalink', widget: 'string' }
+      - { label: 'Navigation Title', name: 'navtitle', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
