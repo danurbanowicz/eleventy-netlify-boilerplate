@@ -73,6 +73,8 @@ npm install
 
 ### 4. Edit _data/metadata.json
 
+This file contains your site title and author details.
+
 ### 5. Run Eleventy (builds the site)
 
 ```
