@@ -22,11 +22,33 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com//)
 
-## Want to just try it out?
+## Want to try it out now?
 
-* [Deploy this project now to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate) in just a few clicks.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
 
-## Getting Started
+Clicking the button above will setup everything needed for running the CMS:
+
+* A new repository in your GitHub account with the code
+* Full Continuous Deployment to Netlify's global CDN network
+* Control users and access with Netlify Identity
+* Manage content with Netlify CMS
+* Process form data with Netlify Forms
+
+The email address associated with your Netlify account will receive an email inviting you as an
+Identity user - click Accept in the email to set your new password, then navigate to `/admin` on
+your site to log in.
+
+Now you're all set, and you can start editing content!
+
+**Note:** if you switch the repo that was created to private, you'll need to regenerate your token,
+as the token generated using the deploy to Netlify button can only access public repositories. To
+regenerate your token, head to "Settings" in your Netlify site dashboard, go to the "Identity"
+section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
+see a text link to "Generate access token in GitHub".
+
+If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
+
+## Getting Started Locally
 
 ### 1. Clone this repository:
 
@@ -72,3 +94,5 @@ DEBUG=* npx eleventy
 This is an ongoing project and I welcome any feedback, suggestions or contributions.
 
 Please use the issue tracker to let me know about any bugs or feature requests, or alternatively make a pull request.
+
+If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).

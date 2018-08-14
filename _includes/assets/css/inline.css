@@ -127,15 +127,43 @@ a[rel="tag"]:visited {
 	color: var(--blue);
   border-radius: .25em;
   text-decoration: none;
-	margin-left: .8em;
+	margin: 0 .5em .5em 0;
 }
 a[rel="tag"]:hover {
 	border: 1px solid var(--blue);
 	background-color: var(--blue);
 	color: var(--white);
 }
-a[rel="tag"]:first-child {
-	margin-left: 0;
+a[rel="tag"]:last-child {
+	margin-right: 0;
+}
+
+/* Contact Form */
+form {
+  display: grid;
+	padding: 2em 0;
+}
+form label {
+  display: none;
+}
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+	font-size: 1rem;
+	font-family: "Avenir", "Avenir Next", sans-serif;
+}
+input,
+textarea {
+	border: 1px solid black;
+}
+button {
+	border: 1px solid var(--blue);
+	background-color: var(--blue);
+	color: var(--white);
+	cursor: pointer;
 }
 
 @media screen and (min-width:768px) {
