@@ -101,4 +101,4 @@ If you need any help with setting up Netlify CMS, you can reach out to the Netli
 
 ## [Browser support](#browser-support)
 
-This template uses relatively new features such as [CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Variables) and is therefore only supported by newer (post 2017) browsers. You should consider providing fallbacks for older browsers when using this template in a production environment.
+This template uses relatively new features such as [CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Variables) therefore browser support is still patchy. You should consider providing fallbacks for older or less capable browsers when using this template in a production environment.
