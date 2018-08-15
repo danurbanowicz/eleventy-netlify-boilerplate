@@ -13,7 +13,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 * Sample pages and blog with tag support
 * Pre-builds and minifies your HTML
 * CSS 2kb minified, inline for fastest page render
-* Responsive CSS Grid layout, with fallbacks
+* Responsive CSS Grid layout, with fallbacks (see [Browser Support](#browser-support))
 * Uses Markdown files for content (works with Netlify CMS)
 * Uses Liquid and/or Nunjucks templates for layout
 * Contains no boilerplate JS or other bloat (100% framework free)
@@ -98,3 +98,7 @@ This is an ongoing project and I welcome any feedback, suggestions or contributi
 Please use the issue tracker to let me know about any bugs or feature requests, or alternatively make a pull request.
 
 If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
+
+## [Browser support](#browser-support)
+
+This template uses relatively new features such as [CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Variables) and is therefore only supported by newer (post 2017) browsers. You should consider providing fallbacks for older browsers when using this template in a production environment.
