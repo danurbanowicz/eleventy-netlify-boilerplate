@@ -11,8 +11,6 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Avenir", "Avenir Next", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 body {
 	display: grid;
