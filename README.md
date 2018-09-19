@@ -2,11 +2,13 @@
 
 ## What is it?
 
-An extremely simple and lightweight template for building a website with blog using the [Eleventy](https://www.11ty.io/) static site generator, with deployment to [Netlify](https://www.netlify.com).
+An extremely simple and lightweight template for building a website with blog and CMS using the [Eleventy](https://www.11ty.io/) static site generator, with deployment to [Netlify](https://www.netlify.com).
 
-Use it as a basis for your own projects or as a way to get started building static sites with Eleventy.
+Use it as a basis for your own projects or as an easy way to get started building static sites with Eleventy.
 
-Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on usage).
+Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
+
+## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com//)
 
 ## Features
 
@@ -20,13 +22,13 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 * Optional Javascipt pipeline for minified inline scripts
 * Continuous Integration (CI) workflow
 
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com//)
-
 ## Want to try it out now?
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
 
-Clicking the button above will setup everything needed for running the CMS:
+Clicking the button above will deploy a copy the demo website to your Netlify
+account (you can create an account during this process if you don't have one)
+and everything needed for running the CMS:
 
 * A new repository in your GitHub account with the code
 * Full Continuous Deployment to Netlify's global CDN network
@@ -34,13 +36,23 @@ Clicking the button above will setup everything needed for running the CMS:
 * Manage content with Netlify CMS
 * Process form data with Netlify Forms
 
-The email address associated with your Netlify account will receive an email inviting you as an
-Identity user - click Accept in the email to set your new password, then navigate to `/admin` on
-your site to log in.
+### Setup authentication
+
+After deploying this project, you will need to add yourself as a Netlify CMS
+user if you wish to access the CMS. It is recommended to use the
+[OAuth](https://www.netlify.com/docs/identity/#external-provider-login) method of logging into the CMS with your Github account (or other OAuth
+provider). Using OAuth removes the need for an email & password to log in
+to the CMS and is generally more secure. You can enable this in your Netlify
+app settings under "Identity" > "External providers".
+
+Next, navigate to `/admin` on your site, choose your OAuth provider from the
+login box and you should then be logged into your CMS. Cool huh?
 
 Now you're all set, and you can start editing content!
 
-**Note:** if you switch the repo that was created to private, you'll need to regenerate your token,
+## Gotchas
+
+If you change the repo that was created at deploy time from public to private, you'll need to regenerate your token,
 as the token generated using the deploy to Netlify button can only access public repositories. To
 regenerate your token, head to "Settings" in your Netlify site dashboard, go to the "Identity"
 section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
@@ -48,7 +60,7 @@ see a text link to "Generate access token in GitHub".
 
 If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
 
-## Getting Started Locally
+## Local development
 
 ### 1. Clone this repository:
 
