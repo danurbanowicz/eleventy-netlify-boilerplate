@@ -38,12 +38,15 @@ and everything needed for running the CMS:
 
 ### Setup authentication
 
-After deploying this project, you will need to add yourself as a Netlify CMS
-user if you wish to access the CMS. It is recommended to use the
-[OAuth](https://www.netlify.com/docs/identity/#external-provider-login) method of logging into the CMS with your Github account (or other OAuth
-provider). Using OAuth removes the need for an email & password to log in
-to the CMS and is generally more secure. You can enable this in your Netlify
-app settings under "Identity" > "External providers".
+After deploying this project, Netlify Identity will add you as a CMS user and
+will email you an invite. It is not necessary to accept this invite if you wish
+to use an
+[OAuth provider](https://www.netlify.com/docs/identity/#external-provider-login)
+(e.g. Github) to manage authentication for your CMS.
+It is recommended to use this method of authentication as it removes the need
+for an email & password to log in to the CMS and is generally more secure. You
+will need to add an OAuth provider in your Netlify app settings under
+"Settings" > "Identity" > "External providers".
 
 Next, navigate to `/admin` on your site, choose your OAuth provider from the
 login box and you should then be logged into your CMS. Cool huh?
