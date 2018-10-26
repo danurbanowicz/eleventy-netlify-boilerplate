@@ -119,7 +119,7 @@ main > section > article > * {
 	margin-bottom: .5em;
 }
 
-/* Tags */
+/* Post Tags */
 a[rel="tag"],
 a[rel="tag"]:visited {
 	display: inline-block;
