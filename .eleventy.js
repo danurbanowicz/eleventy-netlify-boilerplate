@@ -4,7 +4,6 @@ const UglifyJS = require("uglify-js");
 const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
-
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   // Date formatting (human readable)
@@ -25,7 +24,7 @@ module.exports = function(eleventyConfig) {
   // Minify JS
   eleventyConfig.addFilter("jsmin", function(code) {
     let minified = UglifyJS.minify(code);
-    if( minified.error ) {
+    if (minified.error) {
       console.log("UglifyJS error: ", minified.error);
       return code;
     }
@@ -34,7 +33,7 @@ module.exports = function(eleventyConfig) {
 
   // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if( outputPath.indexOf(".html") > -1 ) {
+    if (outputPath.indexOf(".html") > -1) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
@@ -55,6 +54,7 @@ module.exports = function(eleventyConfig) {
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy("_includes/assets/");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
@@ -70,11 +70,7 @@ module.exports = function(eleventyConfig) {
   };
 
   return {
-    templateFormats: [
-      "md",
-      "njk",
-      "html"
-    ],
+    templateFormats: ["md", "njk", "html"],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.
