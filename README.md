@@ -14,13 +14,13 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 * Sample pages and blog with tag support
 * Pre-builds and minifies your HTML
-* CSS 2kb minified, inline for fastest page render
+* CSS 2kb minified, inlined for fastest page render
 * Responsive CSS Grid layout, with fallbacks (see [Browser Support](#browser-support))
 * Uses Markdown files for content (works with Netlify CMS)
 * Uses Liquid and/or Nunjucks templates for layout
 * Contains no boilerplate JS or other bloat (100% framework free)
 * Optional Javascipt pipeline for minified inline scripts
-* Continuous Integration (CI) workflow
+* A snazzy Continuous Deployment workflow
 
 ## Want to try it out now?
 
@@ -48,8 +48,8 @@ for an email & password to log in to the CMS and is generally more secure. You
 will need to add an OAuth provider in your Netlify app settings under
 "Settings" > "Identity" > "External providers".
 
-Next, navigate to `/admin` on your site, choose your OAuth provider from the
-login box and you should then be logged into your CMS. Cool huh?
+Once you've added an OAuth provider, navigate to `/admin` on your site, select your provider from the
+list, and you should then be logged into your CMS. Cool huh?
 
 Now you're all set, and you can start editing content!
 
@@ -116,4 +116,4 @@ If you need any help with setting up Netlify CMS, you can reach out to the Netli
 
 ## [Browser support](#browser-support)
 
-This template uses relatively new features such as [CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Variables) therefore browser support is still patchy. You should consider providing fallbacks for older or less capable browsers when using this template in a production environment.
+This template uses relatively new features such as [CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Variables) therefore you should probably consider providing fallbacks for older or less capable browsers before using this template in a production environment.
