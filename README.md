@@ -8,6 +8,8 @@ Use it as a basis for your own projects or as an easy way to get started buildin
 
 Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
 
+🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/) and blog: [The top 10 Static Site Generators to watch in 2018](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
+
 ## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com//)
 
 ## Features
