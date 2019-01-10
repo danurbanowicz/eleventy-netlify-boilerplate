@@ -2,9 +2,9 @@
 
 ## What is it?
 
-An extremely simple and lightweight template for building a website with blog and [Netlify CMS](https://www.netlifycms.org/) using the [Eleventy](https://www.11ty.io/) static site generator, with deployment to [Netlify](https://www.netlify.com).
+A simple template for building a fast, static website using the [Eleventy](https://www.11ty.io/) static site generator, with [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
 
-Use it as a basis for your own projects or as an easy way to get started building fast static websites with Eleventy.
+Use it as a starter for your own projects or as an easy way to get started building websites with Eleventy.
 
 Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
 
