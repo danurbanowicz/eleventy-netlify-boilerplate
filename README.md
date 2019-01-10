@@ -2,9 +2,9 @@
 
 ## What is it?
 
-An extremely simple and lightweight template for building a website with blog and CMS using the [Eleventy](https://www.11ty.io/) static site generator, with deployment to [Netlify](https://www.netlify.com).
+An extremely simple and lightweight template for building a website with blog and [Netlify CMS](https://www.netlifycms.org/) using the [Eleventy](https://www.11ty.io/) static site generator, with deployment to [Netlify](https://www.netlify.com).
 
-Use it as a basis for your own projects or as an easy way to get started building static sites with Eleventy.
+Use it as a basis for your own projects or as an easy way to get started building fast static websites with Eleventy.
 
 Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
 
@@ -13,13 +13,14 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 ## Features
 
 * Sample pages and blog with tag support
-* Pre-builds and minifies your HTML
+* Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
 * CSS 2kb minified, inlined for fastest page render
+* Pre-builds and minifies your HTML
 * Responsive CSS Grid layout, with fallbacks (see [Browser Support](#browser-support))
-* Uses Markdown files for content (works with Netlify CMS)
+* Uses Markdown files for content
 * Uses Liquid and/or Nunjucks templates for layout
-* Contains no boilerplate JS or other bloat (100% framework free)
-* Optional Javascipt pipeline for minified inline scripts
+* 100% Javascript framework free
+* Optional pipeline for minified inline JS
 * A snazzy Continuous Deployment workflow
 
 ## Want to try it out now?
