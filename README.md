@@ -23,7 +23,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 * Uses Liquid and/or Nunjucks templates for layout
 * 100% Javascript framework free
 * Optional pipeline for minified inline JS
-* A snazzy Continuous Deployment workflow
+* Continuous Deployment workflow via Netlify
 
 ## Want to try it out now?
 
