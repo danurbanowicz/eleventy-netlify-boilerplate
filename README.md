@@ -116,7 +116,3 @@ DEBUG=* npx eleventy
 This is an ongoing project and I welcome contributions. Feel free to submit a PR.
 
 If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
-
-## [Browser support](#browser-support)
-
-This template uses relatively new features such as [CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Variables) therefore you should probably consider providing fallbacks for older or less capable browsers before using this template in a production environment.
