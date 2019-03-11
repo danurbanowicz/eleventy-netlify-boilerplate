@@ -58,19 +58,22 @@ module.exports = function(eleventyConfig) {
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
+  let markdownItAnchor = require("markdown-it-anchor");
   let options = {
     html: true,
     breaks: true,
     linkify: true
   };
   let opts = {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
+    permalink: false
   };
 
+  eleventyConfig.setLibrary("md", markdownIt(options)
+    .use(markdownItAnchor, opts)
+  );
+
   return {
-    templateFormats: ["md", "njk", "html"],
+    templateFormats: ["md", "njk", "html", "liquid"],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.
