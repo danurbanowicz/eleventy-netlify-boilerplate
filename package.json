@@ -22,14 +22,14 @@
   },
   "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
   "devDependencies": {
-    "@11ty/eleventy": "^0.7.1",
-    "luxon": "^1.11.0",
-    "markdown-it": "^8.4.1",
-    "markdown-it-anchor": "^4.0.0"
+    "@11ty/eleventy": "^0.8.2",
+    "luxon": "^1.12.1",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.0.2"
   },
   "dependencies": {
     "clean-css": "^4.2.1",
     "html-minifier": "^3.5.21",
-    "uglify-es": "^3.3.9"
+    "uglify-es": "^3.5.21"
   }
 }
