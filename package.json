@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "clean-css": "^4.2.1",
-    "html-minifier": "^3.5.21",
-    "uglify-es": "^3.5.21"
+    "html-minifier": "^4.0.0",
+    "uglify-es": "^3.3.9"
   }
 }
