@@ -73,11 +73,6 @@ pre {
 	margin: .5em 0;
 }
 
-ul {
-	padding: 0;
-	list-style: none;
-}
-
 /* Header Logo (style as h2) */
 header > em {
 	display: block;
@@ -88,6 +83,11 @@ header > em {
 }
 
 /* Header Nav */
+header nav ul {
+	padding: 0;
+	list-style: none;
+}
+
 header nav ul :first-child {
 	margin-left: 0;
 }
