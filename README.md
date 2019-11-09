@@ -12,7 +12,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
 
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com//)
+## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com/)
 
 ## Features
 
