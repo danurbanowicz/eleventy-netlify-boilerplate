@@ -1,6 +1,6 @@
 {
   "name": "eleventy-netlify-boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
     "build": "npx eleventy",
@@ -22,12 +22,13 @@
   },
   "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy": "^0.10.0",
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5"
   },
   "dependencies": {
+    "@11ty/eleventy-navigation": "^0.1.4",
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
     "uglify-es": "^3.3.9"
