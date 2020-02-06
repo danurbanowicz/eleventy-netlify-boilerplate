@@ -4,9 +4,9 @@
 
 ## What is it?
 
-A simple template for building a fast, static website using the [Eleventy](https://www.11ty.io/) static site generator, with [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
+A simple template for building an ultra-lean, fast, pre-generated HTML website using the [Eleventy](https://www.11ty.io/) static site generator. With [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
 
-Use it as a starter for your own projects or as an easy way to get started building websites with Eleventy.
+Use it as a starter for your own JAMstack projects, or as an easy way to get started building websites with Eleventy.
 
 Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
 
@@ -16,15 +16,17 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
-* Sample pages and blog with tag support
+* NEW: Now with [Eleventy v0.10.0](https://github.com/11ty/eleventy/releases/tag/v0.10.0) freshness! :doughnut:
+* NEW: Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
+* Sample pages and a blog with tag support
 * Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
+* Includes a working contact form
 * CSS 2kb minified, inlined for fastest page render
-* Pre-builds and minifies your HTML
-* Responsive CSS Grid layout, with fallbacks (see [Browser Support](#browser-support))
-* Uses Markdown files for content
-* Uses Liquid and/or Nunjucks templates for layout
-* 100% Javascript framework free
 * Optional pipeline for minified inline JS
+* Pre-builds and minifies your HTML too
+* Uses Markdown files for content
+* Uses Nunjucks (or Liquid) templates for layout
+* 100% Javascript framework free
 * Continuous Deployment workflow via Netlify
 
 ## Want to try it out now?
@@ -85,34 +87,34 @@ cd my-blog-name
 
 Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
 
-### 3. Install dependencies
+### 3. Install dependencies locally
 
 ```
-npm install
+npm install @11ty/eleventy
 ```
 
 ### 4. Edit _data/metadata.json
 
-This file contains your site title and author details.
+This file contains your site title and author details, and can be used to store any other commonly used site data.
 
 ### 5. Run Eleventy (builds the site)
 
 ```
-npx eleventy
+npx @11ty/eleventy
 ```
 
 Or build automatically when a template changes:
 ```
-npx eleventy --watch
+npx @11ty/eleventy --watch
 ```
 
 Or in debug mode:
 ```
-DEBUG=* npx eleventy
+DEBUG=* npx @11ty/eleventy
 ```
 
 ## Bug reports, feature requests, etc
 
-This is an ongoing project and I welcome contributions. Feel free to submit a PR.
+This is an ongoing project and I welcome contributions and suggestions! Feel free to submit a PR.
 
 If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
