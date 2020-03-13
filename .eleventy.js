@@ -15,6 +15,10 @@ module.exports = function(eleventyConfig) {
   // post to a new file like this:
   // eleventyConfig.addLayoutAlias("post", "layouts/my_new_post_layout.njk");
 
+  // Merge data instead of overriding
+  // https://www.11ty.dev/docs/data-deep-merge/
+  eleventyConfig.setDataDeepMerge(true);
+
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
