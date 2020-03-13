@@ -9,7 +9,11 @@ module.exports = function(eleventyConfig) {
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  // Configuration API: use eleventyConfig.addLayoutAlias(from, to) to add
+  // layout aliases! Say you have a bunch of existing content using
+  // layout: post. If you don’t want to rewrite all of those values, just map
+  // post to a new file like this:
+  // eleventyConfig.addLayoutAlias("post", "layouts/my_new_post_layout.njk");
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
