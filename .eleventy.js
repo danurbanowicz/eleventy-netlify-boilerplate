@@ -57,13 +57,6 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-  // only content in the `posts/` directory
-  eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/posts\//) !== null;
-    });
-  });
-
   // Universal slug filter strips unsafe chars from URLs
   eleventyConfig.addFilter("slugify", function(str) {
     return slugify(str, {
@@ -107,7 +100,6 @@ module.exports = function(eleventyConfig) {
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
-    passthroughFileCopy: true,
     dir: {
       input: ".",
       includes: "_includes",
