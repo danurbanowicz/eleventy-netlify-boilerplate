@@ -1,4 +1,7 @@
-<form name="contact" method="POST" netlify>
+<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
   <label for="name">Name</label>
   <input type="text" name="name" id="name" autocomplete="name" placeholder="Your name" title="Please enter your name" required>
   <label for="email">Email</label>
