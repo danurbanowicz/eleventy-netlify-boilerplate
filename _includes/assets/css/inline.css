@@ -94,7 +94,12 @@ header nav ul :first-child {
 
 header nav li {
 	display: inline-block;
-	margin: 0 .5em;
+	margin: 0 .25em;
+}
+
+header nav li a {
+	padding: .25em .5em;
+	border-radius: .25em;
 }
 
 header nav li a[href]:not(:hover) {
@@ -102,8 +107,7 @@ header nav li a[href]:not(:hover) {
 }
 
 header nav li a[data-current="current item"] {
-	font-weight: 700;
-	text-decoration: underline;
+	background-color: white;
 }
 
 /* Posts List */
