@@ -1,7 +1,8 @@
 :root {
-	--turkey: #FFF0EB;
-	--white: white;
-	--blue: blue;
+	--primary: blue;
+	--secondary: white;
+	--background: #FFF0EB;
+
 }
 
 *, *:before, *:after {
@@ -19,7 +20,7 @@ body {
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
+	background-color: var(--background);
 }
 
 main {
@@ -34,7 +35,7 @@ code {
 
 a[href],
 a[href]:visited {
-	color: var(--blue);
+	color: var(--primary);
 }
 
 a[href]:not(:hover) {
@@ -115,7 +116,7 @@ article {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--white);
+	border-bottom: 1px solid var(--secondary);
 }
 
 main > section > article > * {
@@ -134,18 +135,18 @@ a[rel="tag"]:visited {
   padding: 0 .5em;
 	line-height: 2em;
 	height: 2em;
-  border: 1px solid var(--white);
-	background-color: var(--white);
-	color: var(--blue);
+  border: 1px solid var(--secondary);
+	background-color: var(--secondary);
+	color: var(--primary);
   border-radius: .25em;
   text-decoration: none;
 	margin: 0 .5em .5em 0;
 }
 
 a[rel="tag"]:hover {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
+	border: 1px solid var(--primary);
+	background-color: var(--primary);
+	color: var(--secondary);
 }
 
 a[rel="tag"]:last-child {
@@ -178,9 +179,9 @@ textarea {
 }
 
 button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
+	border: 1px solid var(--primary);
+	background-color: var(--primary);
+	color: var(--secondary);
 	cursor: pointer;
 }
 
