@@ -21,6 +21,7 @@ collections:
         name: "author"
         widget: "relation"
         collection: "authors"
+        file: "_data/authors.json"
         searchFields: ["name", "github"]
         valueField: "name"
       - { label: "Summary", name: "summary", widget: "text" }
