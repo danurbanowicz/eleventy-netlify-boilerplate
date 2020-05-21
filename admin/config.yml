@@ -37,7 +37,7 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
-  # Authors (listed in _data/authors.json)
+  # Authors (from _data/authors.json)
   - name: "settings"
     label: "Settings"
     files:
