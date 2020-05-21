@@ -16,14 +16,6 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      # Authors (listed in _data/authors.json)
-      - name: "author"
-        label: "Post Author"
-        widget: "relation"
-        collection: "authors"
-        searchFields: "name"
-        valueField: "name"
-        displayFields: "name"
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
@@ -46,15 +38,18 @@ collections:
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
   # Authors (listed in _data/authors.json)
-  - name: "authors"
-    label: "Post Authors"
-    collection: "authors"
-    files: "_data/authors.json"
-    fields:
-      - label: "Author"
-        name: "author"
-        widget: "list"
-        fields:
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Github", name: "github", widget: "string"}
+  - name: "settings"
+    label: "Settings"
+    files:
+      - name: "authors"
+        label: "Authors"
+        file: "_data/authors.json"
+        extension: "json"
+          - fields:
+            name: "author"
+            label: "Author"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "GitHub", name: "github", widget: "string"}
