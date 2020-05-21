@@ -20,7 +20,7 @@ collections:
       - label: "Post Author"
         name: "author"
         widget: "relation"
-        collection: "settings.authors"
+        collection: "settings"
         searchFields: ["name", "github"]
         valueField: "name"
       - { label: "Summary", name: "summary", widget: "text" }
