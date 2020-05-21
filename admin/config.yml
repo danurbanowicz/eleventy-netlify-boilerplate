@@ -20,11 +20,10 @@ collections:
       - name: "author"
         label: "Post Author"
         widget: "relation"
-        file: "_data/authors.json"
         collection: "authors"
-        searchFields: ["name", "email"]
+        searchFields: "name"
         valueField: "name"
-        displayFields: ["name"]
+        displayFields: "name"
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
@@ -46,3 +45,16 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
+  # Authors (listed in _data/authors.json)
+  - name: "authors"
+    label: "Post Authors"
+    collection: "authors"
+    file: "_data/authors.json"
+    fields:
+      - label: "Author"
+        name: "author"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Github", name: "github", widget: "string"}
