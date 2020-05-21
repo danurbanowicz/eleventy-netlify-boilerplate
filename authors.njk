@@ -1,0 +1,21 @@
+---
+pagination:
+  data: authors
+  size: 1
+  alias: author
+permalink: /author/{{ author.name | slug }}/
+layout: layouts/base.njk
+renderData:
+  title: "Posts by “{{ author.name }}”"
+---
+
+<h1>{{ author.name }}</h1>
+<p><a href="mailto:{{ author.email }}">{{ author.email }}</a></p>
+<p><a href="{{ author.github }}">View on GitHub</a></p>
+
+{% set postslist = collections[ author ] %}
+{% include "components/postslist.njk" %}
+
+<nav>
+  <a href="{{ '/blog/' | url }}">← Blog index</a>
+</nav>

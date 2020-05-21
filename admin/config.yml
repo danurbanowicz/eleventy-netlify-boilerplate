@@ -20,9 +20,9 @@ collections:
       - label: "Post Author"
         name: "author"
         widget: "relation"
-        collection: "settings"
-        searchFields: ["name", "github"]
-        valueField: "name"
+        collection: "author"
+        searchFields: ["author.name", "author.github"]
+        valueField: "author.name"
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -44,23 +44,12 @@ collections:
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
   # Authors (from _data/authors.json)
-  - name: "settings"
-    label: "Settings"
-    files:
-      - name: "metadata"
-        label: "Site Details"
-        file: "_data/metadata.json"
-        fields:
-          - {label: "Site Title", name: "title", widget: "string"}
-          - {label: "Site URL", name: "url", widget: "string"}
-      - name: "authors"
-        label: "Authors"
-        file: "_data/authors.json"
-        fields:
-          - name: "author"
-            label: "Author"
-            widget: "list"
-            fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Email", name: "email", widget: "string"}
-              - {label: "GitHub", name: "github", widget: "string"}
+  - name: "author"
+    label: "Author"
+    folder: "authors"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Email", name: "email", widget: "string"}
+      - {label: "GitHub", name: "github", widget: "string"}

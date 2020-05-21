@@ -1,19 +1,17 @@
-{
-  "author": [
-    {
-      "name": "Jane Doe",
-      "email": "janedoe@example.com",
-      "github": "https://github.com/janedoe"
-    },
-    {
-      "name": "Dan Urbanowicz",
-      "email": "dan.urbanowicz@gmail.com",
-      "github": "https://github.com/danurbanowicz"
-    },
-    {
-      "name": "John Doe",
-      "email": "johndoe@example.com",
-      "github": "https://github.com/notjohndoe"
-    }
-  ]
-}
+[
+  {
+    "name": "Jane Doe",
+    "email": "janedoe@example.com",
+    "github": "https://github.com/janedoe"
+  },
+  {
+    "name": "Dan Urbanowicz",
+    "email": "dan.urbanowicz@gmail.com",
+    "github": "https://github.com/danurbanowicz"
+  },
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "github": "https://github.com/notjohndoe"
+  }
+]
