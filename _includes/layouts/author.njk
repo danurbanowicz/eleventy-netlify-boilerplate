@@ -7,9 +7,6 @@ section: author
 <p><a href="mailto:{{ email }}">{{ email }}</a></p>
 <p><a href="{{ github }}">View on GitHub</a></p>
 
-{% set postslist = collections[ author ] %}
-{% include "components/postslist.njk" %}
-
 <nav>
   <a href="{{ '/blog/' | url }}">← Blog index</a>
 </nav>
