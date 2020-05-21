@@ -49,7 +49,7 @@ collections:
   - name: "authors"
     label: "Post Authors"
     collection: "authors"
-    file: "_data/authors.json"
+    files: "_data/authors.json"
     fields:
       - label: "Author"
         name: "author"
