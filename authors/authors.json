@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/author.njk",
+  "permalink": "authors/{{ name | slug }}/index.html"
+}
