@@ -17,7 +17,7 @@
 			{% endif %}
 			<p>
 				<time datetime="{{ post.date | machineDate }}">
-					<small>{{ post.date | readableDate }} by {{ metadata.author.name }}</small>
+					<small>{{ post.date | readableDate }} by {{ post.data.author }}</small>
 				</time>
 			</p>
 			{% if post.data.tags %}

@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: authors # Branch to update (optional; defaults to master)
 
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
@@ -16,6 +16,15 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
+      # Authors (listed in _data/authors.json)
+      - name: "author"
+        label: "Post Author"
+        widget: "relation"
+        file: "_data/authors.json"
+        collection: "authors"
+        searchFields: ["name", "email"]
+        valueField: "name"
+        displayFields: ["name"]
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
