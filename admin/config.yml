@@ -41,10 +41,15 @@ collections:
   - name: "settings"
     label: "Settings"
     files:
+      - name: "metadata"
+        label: "Site Details"
+        file: "_data/metadata.json"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "Site URL", name: "url", widget: "string"}
       - name: "authors"
         label: "Authors"
         file: "_data/authors.json"
-        extension: "json"
         fields:
           - name: "author"
             label: "Author"
