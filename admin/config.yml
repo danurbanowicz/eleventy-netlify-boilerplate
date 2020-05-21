@@ -20,9 +20,9 @@ collections:
       - label: "Post Author"
         name: "author"
         widget: "relation"
-        collection: "settings"
-        searchFields: ["author.name", "author.github"]
-        valueField: "author.name"
+        collection: "settings.authors"
+        searchFields: ["name", "github"]
+        valueField: "name"
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
