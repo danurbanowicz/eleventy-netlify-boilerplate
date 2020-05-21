@@ -20,9 +20,9 @@ collections:
       - label: "Post Author"
         name: "author"
         widget: "relation"
-        collection: "author"
-        searchFields: ["author.name", "author.github"]
-        valueField: "author.name"
+        collection: "authors"
+        searchFields: ["name", "github"]
+        valueField: "name"
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -43,12 +43,12 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
-  # Authors (from _data/authors.json)
-  - name: "author"
+  # Authors
+  - name: "authors"
     label: "Author"
     folder: "authors"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.name}}"
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Email", name: "email", widget: "string"}
