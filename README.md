@@ -16,8 +16,8 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
-* NEW: Now with [Eleventy v0.10.0](https://github.com/11ty/eleventy/releases/tag/v0.10.0) freshness! :doughnut:
-* NEW: Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
+* NEW: Added basic support for post authors, using a simple folder collection
+* Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
 * Sample pages and a blog with tag support
 * Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
 * Includes a working contact form
