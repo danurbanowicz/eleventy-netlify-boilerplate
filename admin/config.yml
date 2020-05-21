@@ -45,8 +45,8 @@ collections:
         label: "Authors"
         file: "_data/authors.json"
         extension: "json"
-          - fields:
-            name: "author"
+        fields:
+          - name: "author"
             label: "Author"
             widget: "list"
             fields:
