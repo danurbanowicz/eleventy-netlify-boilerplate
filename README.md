@@ -20,7 +20,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 * Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
 * Sample pages and a blog with tag support
 * Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
-* Includes a working contact form
+* Includes a working contact form with a custom thanks page
 * CSS 2kb minified, inlined for fastest page render
 * Optional pipeline for minified inline JS
 * Pre-builds and minifies your HTML too
