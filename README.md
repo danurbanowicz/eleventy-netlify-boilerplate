@@ -29,7 +29,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 * 100% Javascript framework free
 * Continuous Deployment workflow via Netlify
 
-## Want to try it out now?
+## Want to try it out now?  yes or no
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
 
