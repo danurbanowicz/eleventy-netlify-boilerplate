@@ -23,8 +23,8 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 * Includes a working contact form
 * CSS 2kb minified, inlined for fastest page render
 * Optional pipeline for minified inline JS
-* Pre-builds and minifies your HTML too
-* Uses Markdown files for content
+* Pre-builds and minifies your HTML as well
+* Uses Markdown files for content 
 * Uses Nunjucks (or Liquid) templates for layout
 * 100% Javascript framework free
 * Continuous Deployment workflow via Netlify
