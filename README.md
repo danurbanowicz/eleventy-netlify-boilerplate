@@ -2,7 +2,7 @@
 
 # Eleventy Netlify Boilerplate
 
-## What is it?
+## Why you should use this template?
 
 A simple template for building a fast, pre-generated HTML website using the [Eleventy](https://www.11ty.io/) static site generator. With [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
 
