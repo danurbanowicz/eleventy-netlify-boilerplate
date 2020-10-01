@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
 
 # Eleventy Netlify Boilerplate
-
+# Amazing Website
 ## What is it?
 
 A simple template for building a fast, pre-generated HTML website using the [Eleventy](https://www.11ty.io/) static site generator. With [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
