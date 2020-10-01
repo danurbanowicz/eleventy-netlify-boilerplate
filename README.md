@@ -79,7 +79,7 @@ git clone https://github.com/danurbanowicz/eleventy-netlify-boilerplate.git my-b
 ```
 
 
-### 2. Navigate to the directory
+### 2. Navigate to the directory:
 
 ```
 cd my-blog-name
@@ -87,17 +87,17 @@ cd my-blog-name
 
 Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
 
-### 3. Install dependencies locally
+### 3. Install dependencies locally:
 
 ```
 npm install @11ty/eleventy
 ```
 
-### 4. Edit _data/metadata.json
+### 4. Edit _data/metadata.json:
 
 This file contains your site title and author details, and can be used to store any other commonly used site data.
 
-### 5. Run Eleventy (builds the site)
+### 5. Run Eleventy (builds the site):
 
 ```
 npx @11ty/eleventy
