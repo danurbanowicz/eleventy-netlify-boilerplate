@@ -28,6 +28,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 * Uses Nunjucks (or Liquid) templates for layout
 * 100% Javascript framework free
 * Continuous Deployment workflow via Netlify
+* User Friendly Interface
 
 ## Want to try it out now?
 
