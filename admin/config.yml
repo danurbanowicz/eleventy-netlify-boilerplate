@@ -17,12 +17,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - label: "Post Author"
-        name: "author"
-        widget: "relation"
-        collection: "authors"
-        searchFields: ["name", "github"]
-        valueField: "name"
+      - { label: "Author", name: "author", widget: "string", default: "Anonymous" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -43,13 +38,3 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
-  # Authors
-  - name: "authors"
-    label: "Author"
-    folder: "authors"
-    create: true
-    slug: "{{fields.name}}"
-    fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Email", name: "email", widget: "string"}
-      - {label: "GitHub", name: "github", widget: "string"}
