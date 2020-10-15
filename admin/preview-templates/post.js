@@ -22,8 +22,8 @@ const Post = createClass({
                   )
                 }</time
               >
-              by ${entry.getIn(["data", "author"], null)}
             </small>
+            <small> by ${entry.getIn(["data", "author"], null)}</small>
           </p>
 
           <p>${entry.getIn(["data", "summary"], "")}</p>
