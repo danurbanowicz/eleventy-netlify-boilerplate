@@ -21,7 +21,7 @@ const Post = createClass({
                     "dd MMM, yyyy"
                   )
                 }</time
-              >
+              > 
               by ${entry.getIn(["data", "author"], null)}
             </small>
           </p>
