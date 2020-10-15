@@ -1,6 +1,6 @@
 ---
-title: This is my first post
-date: 2015-01-01T00:00:00.000Z
+title: This is the first example post
+date: 2019-01-01T00:00:00.000Z
 author: John Appleseed
 summary: Why contemplating our mortality can be a powerful catalyst for change
 tags:

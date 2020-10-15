@@ -2,7 +2,6 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
-const slugify = require("slugify");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
@@ -19,6 +18,24 @@ module.exports = function(eleventyConfig) {
   // Merge data instead of overriding
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);
+
+  // Add support for maintenance-free post authors
+  // Adds an authors collection using the author key in our post frontmatter
+  // Thanks to @pdehaan: https://github.com/pdehaan
+  eleventyConfig.addCollection("authors", collection => {
+    const blogs = collection.getFilteredByGlob("posts/*.md");
+    return blogs.reduce((coll, post) => {
+      const author = post.data.author;
+      if (!author) {
+        return coll;
+      }
+      if (!coll.hasOwnProperty(author)) {
+        coll[author] = [];
+      }
+      coll[author].push(post.data);
+      return coll;
+    }, {});
+  });
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -58,20 +75,10 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-  // Universal slug filter strips unsafe chars from URLs
-  eleventyConfig.addFilter("slugify", function(str) {
-    return slugify(str, {
-      lower: true,
-      replacement: "-",
-      remove: /[*+~.·,()'"`´%!?¿:@]/g
-    });
-  });
-
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("_includes/assets/");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
