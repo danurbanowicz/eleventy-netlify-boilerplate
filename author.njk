@@ -9,6 +9,7 @@ permalink: "authors/{{ author | slug }}/"
 renderData:
   author: "{{ author }}"
   title: "Posts by {{ author }}"
+  metaDescription: "An archive of all posts by the author: {{ author }}."
 ---
 
 <h1>{{ renderData.title | safe }}</h1>
