@@ -7,6 +7,8 @@ backend:
 
 media_folder: "static/img" # Media files will be stored in the repo under images/uploads
 
+local_backend: true # Run "npx netlify-cms-proxy-server" for local backend
+
 collections:
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog

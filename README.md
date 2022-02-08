@@ -118,6 +118,16 @@ Or in debug mode:
 DEBUG=* npx @11ty/eleventy
 ```
 
+### 6. Run CMS locally
+
+```
+npx netlify-cms-proxy-server
+```
+
+Make sure to run both Eleventy Server & Proxy Server parallelly (using multiple terminal windows
+
+CMS can be accessed from localhost:PORT/admin
+
 ## Bug reports, feature requests, etc
 
 This is an ongoing project and I welcome contributions and suggestions! Feel free to submit a PR.
