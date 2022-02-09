@@ -16,10 +16,10 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
-* NEW: Added maintenance-free post author archives
 * Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
 * Sample pages and a blog with tag support
 * Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
+* Maintenance-free post author archives
 * Includes a working contact form
 * CSS 2kb minified, inlined for fastest page render
 * Optional pipeline for minified inline JS
