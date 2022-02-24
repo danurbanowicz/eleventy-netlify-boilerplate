@@ -2,11 +2,9 @@
 
 # Eleventy Netlify Boilerplate
 
-## Click the button below to try it out!
+### Click the button below to try it out!
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
-
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.app/)
 
 ## What is it?
 
@@ -17,6 +15,8 @@ Use it as a starter for your own JAMstack projects, or as an easy way to get sta
 Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
 
 🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
+
+## [Demo Site](https://eleventy-netlify-boilerplate.netlify.app/)
 
 ## Features
 
