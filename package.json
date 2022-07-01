@@ -15,7 +15,7 @@
   "author": {
     "name": "Dan Urbanowicz",
     "email": "dan.urbanowicz@gmail.com",
-    "url": "https://www.danurbanowicz.com/"
+    "url": "https://github.com/danurbanowicz"
   },
   "license": "MIT",
   "bugs": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^1.0.1",
     "luxon": "^2.3.0",
     "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.4.1"
