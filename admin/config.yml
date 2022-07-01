@@ -1,9 +1,15 @@
+# Netlify CMS Configuration File
+
+# The backend option specifies how to access the content for your site
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: master # The branch to update (optional; defaults to master)
 
-# Uncomment below to enable drafts
+# Uncomment below to enable drafts https://www.netlifycms.org/docs/add-to-your-site/#editorial-workflow
 # publish_mode: editorial_workflow
+
+# Uncomment below to enable a link to your published site in the header bar of Netlify CMS
+# site_url: https://eleventy-netlify-boilerplate.netlify.app/
 
 media_folder: "static/img" # Media files will be stored in the repo under images/uploads
 
