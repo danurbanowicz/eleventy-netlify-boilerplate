@@ -20,7 +20,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
-* NEW: Now using Eleventy v2.0 which includes the new Eleventy Dev Server
+* NEW: Now using Eleventy v2.0 (requires Node 14 or above!)
 * Sample pages and a blog with tag support
 * Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
 * Scores 100/100/100/100 in Lighthouse performance tests
