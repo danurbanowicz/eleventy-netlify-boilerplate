@@ -20,10 +20,12 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
-* Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
+* NEW: Now using Eleventy v2.0 (requires Node 14 or above!)
 * Sample pages and a blog with tag support
 * Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
+* Scores 100/100/100/100 in Lighthouse performance tests
 * Maintenance-free post author archives
+* Automatic navigation menus with [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/)
 * Includes a working contact form
 * CSS 2kb minified, inlined for fastest page render
 * Optional pipeline for minified inline JS

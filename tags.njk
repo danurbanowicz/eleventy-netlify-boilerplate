@@ -10,7 +10,7 @@ pagination:
     - posts
 permalink: /tags/{{ tag }}/
 layout: layouts/base.njk
-renderData:
+eleventyComputed:
   title: "Tagged “{{ tag }}”"
   metaDescription: "All posts from the Blog tagged with “{{ tag }}”"
 ---

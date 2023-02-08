@@ -1,5 +1,8 @@
 ---
 title: The fifth and hopefully final example post
+metaDescription: This is a sample meta description. If one is not present in
+  your page/post's front matter, the default metadata.description will be used
+  instead.
 date: 2020-10-15T12:23:39.598Z
 author: Jane Doe
 summary: Why contemplating our mortality can be a powerful catalyst for change

@@ -10,9 +10,9 @@
 #[[redirects]]
 #  from = "/*"
 #  to = "/blog/:splat"
+# status = 302
 
 # The default HTTP status code is 301, but you can define a different one e.g.
-# status = 302
 
 # Headers rule example
 # For more information see:- https://www.netlify.com/docs/netlify-toml-reference/
