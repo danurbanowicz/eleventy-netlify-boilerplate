@@ -2,13 +2,13 @@
   <meta charset="utf-8">
   <meta name="generator" content="{{ eleventy.generator }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ renderData.title or title or metadata.title }}</title>
-  <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
+  <title>{{ title or metadata.title }}</title>
+  <meta name="description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}">
   {% set css %}
     {% include "assets/css/inline.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
-  {# Uncomment below if you want to include inline JavaScript #}
+  {# Uncomment below if you want to include minified inline JavaScript #}
   {# {% set js %}
     {% include "assets/js/inline.js" %}
   {% endset %}
