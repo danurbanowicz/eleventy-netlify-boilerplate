@@ -14,8 +14,6 @@ Use it as a starter for your own JAMstack projects, or as an easy way to get sta
 
 Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
 
-🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
-
 ## [Demo Site](https://eleventy-netlify-boilerplate.netlify.app/)
 
 ## Features
@@ -23,7 +21,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 * NEW: Now using Eleventy v2.0 (requires Node 14 or above!)
 * Sample pages and a blog with tag support
 * Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
-* Scores 100/100/100/100 in Lighthouse performance tests
+* Scores 100/100/100/100 in Lighthouse performance tests 🔥
 * Maintenance-free post author archives
 * Automatic navigation menus with [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/)
 * Includes a working contact form
