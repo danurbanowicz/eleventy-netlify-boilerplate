@@ -8,9 +8,9 @@
 
 ## What is it?
 
-A simple template for building a fast, pre-generated HTML website using the [Eleventy](https://www.11ty.dev/) static site generator. With [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
+A simple template for building a fast, pre-generated HTML website using the [Eleventy](https://www.11ty.dev/) static site generator. With [Decap CMS](https://www.decapcms.org/) (formerly Netlify CMS) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
 
-Use it as a starter for your own JAMstack projects, or as an easy way to get started building websites with Eleventy.
+Use it as a starter for your own Jamstack projects, or as an easy way to get started building websites with Eleventy.
 
 Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
 
@@ -18,9 +18,9 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
-* NEW: Now using Eleventy v2.0 (requires Node 14 or above!)
+* Uses Eleventy v2.0.1
 * Sample pages and a blog with tag support
-* Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
+* Decap CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
 * Scores 100/100/100/100 in Lighthouse performance tests 🔥
 * Maintenance-free post author archives
 * Automatic navigation menus with [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/)
@@ -44,7 +44,7 @@ and everything needed for running the CMS:
 * A new repository in your GitHub account with the code
 * Full Continuous Deployment to Netlify's global CDN network
 * Control users and access with Netlify Identity
-* Manage content with Netlify CMS
+* Manage content with Decap CMS
 * Process form data with Netlify Forms
 
 ### Set Up Authentication
@@ -65,7 +65,7 @@ list, and you should then be logged into your CMS. Cool huh?
 
 ### Set Up Identity Email Templates
 
-In order for Netlify Identity service emails (Signup, Reset Password etc) to function correctly with Netlify CMS, you will need to tell Netlify where your email templates are located.
+In order for Netlify Identity service emails (Signup, Reset Password etc) to function correctly with Decap CMS, you will need to tell Netlify where your email templates are located.
 
 Inside this repo under `/admin/email-templates/` are four Netlify Identity email templates. Inside your Netlify site settings, you will need to navigate to: "Site Settings > Identity" and look there for the four email template configuration boxes: Invitation template, Confirmation template, Recovery template, and Email change template. Inside each, edit the "Path to template" field to match the root-relative path to each template. For example:
 
@@ -81,7 +81,7 @@ regenerate your token, head to "Settings" in your Netlify site dashboard, go to 
 section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
 see a text link to "Generate access token in GitHub".
 
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
+If you need any help with setting up Decap CMS, you can reach out to the Netlify team in the [Decap CMS Gitter](https://gitter.im/netlify/netlifycms).
 
 ## Local development
 
@@ -135,4 +135,4 @@ DEBUG=* npx @11ty/eleventy
 
 This is an ongoing project and I welcome contributions and suggestions! Feel free to submit a PR.
 
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
+If you need any help with setting up Decap CMS, you can reach out to the Netlify team in the [Decap CMS Gitter](https://gitter.im/netlify/netlifycms).
