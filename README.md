@@ -26,7 +26,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 * Automatic navigation menus with [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/)
 * Includes a working contact form
 * CSS 2kb minified, inlined for fastest page render
-* Optional pipeline for minified inline JS
+* Optional pipeline for your minified inline JS
 * Pre-builds and minifies your HTML too
 * Uses Markdown files for content
 * Uses Nunjucks (or Liquid) templates for layout
