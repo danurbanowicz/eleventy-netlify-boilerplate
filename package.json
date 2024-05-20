@@ -28,7 +28,7 @@
     "clean-css": "^5.3.3",
     "html-minifier": "^4.0.0",
     "luxon": "^3.4.4",
-    "markdown-it-anchor": "^8.6.7",
+    "markdown-it-anchor": "^9.0.1",
     "uglify-js": "^3.17.4"
   }
 }
