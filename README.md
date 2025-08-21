@@ -18,7 +18,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
-* Uses Eleventy v2.0.1
+* Now uses Eleventy 3
 * Sample pages and a blog with tag support
 * Decap CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
 * Scores 100/100/100/100 in Lighthouse performance tests 🔥
